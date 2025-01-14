@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Meat Specifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2px;
+            background-color: #f9f9f9;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333;
+            padding: 10px 0;
+            background-color: #e8f5e9;
+            border-bottom: 2px solid #c8e6c9;
+        }
+
+        .content-container {
+            width: 98%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-container {
+            display: flex; /* Membuat gambar dan keterangan dalam satu baris */
+            align-items: flex-start; /* Menyelaraskan konten di bagian atas */
+            margin-bottom: 20px; /* Jarak antar item */
+            border-bottom: 0 solid #ddd; /* Garis bawah untuk pemisah */
+            padding-bottom: 15px;
+        }
+
+        .item-container:last-child {
+            border-bottom: none; /* Menghapus garis bawah pada item terakhir */
+        }
+
+        .image-container {
+            flex: 1; /* Mengatur proporsi gambar */
+            text-align: center;
+            margin-right: 25px; /* Jarak antara gambar dan keterangan */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .description-container {
+            flex: 1.5; /* Mengatur proporsi kolom keterangan */
+        }
+
+        .description-container .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .description-container .value {
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .btn-print {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%
+        }
+
+        .btn-print:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Judul Halaman -->
+    <div class="page-title">STANDARD MEAT,SEAFOOD & EGG SPECIFICATIONS</div>
+
+    <!-- Container untuk konten -->
+    <div class="content-container">
+        <!-- Item 1 -->
+        <div class="item-container">
+            <div class="image-container">
+                <img src="beef.jpg" alt="Deskripsi Gambar 1">
+            </div>
+            <div class="description-container">
+                <div class="label" style="font-size: 22px; margin-bottom: 15px;">Daging Sapi/Beef</div>
+
+                <div class="label">Warna:</div>
+                <div class="value">Merah cerah, tidak pucat, tidak keabu-abuan dan tidak memiliki bercak kehijauan.</div>
+
+                <div class="label">Tekstur:</div>
+                <div class="value">Memiliki tekstur kenyal,tidak lembek dan tidak mengandung banyak lemak(tergantung kebutuhan)</div>
+
+                <div class="label">Kondisi:</div>
+                <div class="value">Lembab, tidak berlendir dan tidak berair.</div>
+
+                <div class="label">Aroma:</div>
+                <div class="value">Memiliki aroma khas dan tidak berbau bususk/asam.</div>
+
+                <div class="label">Lapisan lemak:</div>
+                <div class="value">Lemak daging segar berwarna putih atau kekuningan terang, tidak berwarna gelap/hitam.</div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item-container">
+            <div class="image-container">
+                <img src="chicken.jpg" alt="Deskripsi Gambar 2">
+            </div>
+            <div class="description-container">
+                <div class="label" style="font-size: 22px; margin-bottom: 15px;">Daging Ayam/Chicken</div>
+
+                <div class="label">Warna:</div>
+                <div class="value">Memiliki wana merah muda yang cerah, tidak pucat,tidak kebiru-biruan atau keabuan.</div>
+
+                <div class="label">Tekstur:</div>
+                <div class="value">Padat dan kenyal, tidak lembek dan tidak berlendir.</div>
+
+                <div class="label">Kondisi Tulang:</div>
+                <div class="value">Tulang ayam segar berwarna putih kekuningan tidak kusam atau hitam.</div>
+
+                <div class="label">Aroma:</div>
+                <div class="value">Memiliki aroma khas menandakan kesegaran dan tidak bau busuk/asam.</div>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="image-container">
+                <img src="fish.jpg" alt="Deskripsi Gambar 2">
+            </div>
+            <div class="description-container">
+                <div class="label" style="font-size: 22px; margin-bottom: 15px;">Ikan/Fish</div>
+
+                <div class="label">Mata:</div>
+                <div class="value">Mata ikan jernih,cembung,berkilau tidak buram/cekung/keruh</div>
+
+                <div class="label">Tekstur:</div>
+                <div class="value">Daging kenyal apabila ditekan akan kembali kebentuk semuala dan tidak lembek</div>
+
+                <div class="label">Kulit:</div>
+                <div class="value">Kulit segar dan cerah,sisik tidak mudah lepas, tidak kusam dan berlendir</div>
+
+                <div class="label">Aroma:</div>
+                <div class="value">Memiliki aroma khas laut/tawar menandakan kesegaran dan tidak bau busuk.</div>
+
+                <div class="label">Perut Dan Sirip:</div>
+                <div class="value">Perut tidak mengembung/pecah dan tidak lunak,sirip dan ekor tidak kaku</div>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="image-container">
+                <img src="prawn.jpg" alt="Deskripsi Gambar 2">
+            </div>
+            <div class="description-container">
+                <div class="label" style="font-size: 22px; margin-bottom: 15px;">Udang/Prawn</div>
+
+                <div class="label">Warna:</div>
+                <div class="value">Memiliki warna transparan keabu-abuan mengkilau, belum berubah warna ke merah/kuning</div>
+
+                <div class="label">Tekstur:</div>
+                <div class="value">Memiliki tekstur padat dan elastis, tidak lembek/berlendir.</div>
+
+                <div class="label">Kulit:</div>
+                <div class="value">Memiliki kulit mengkilap dan menepel erat pada daging.</div>
+
+                <div class="label">Aroma:</div>
+                <div class="value">Memiliki aroma laut yang segar.</div>
+
+                <div class="label">Kepala dan Ekor:</div>
+                <div class="value">kepala merekat erat pada tubuh dn ekor melengkung alami.</div>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="image-container">
+                <img src="squid.jpg" alt="Deskripsi Gambar 2">
+            </div>
+            <div class="description-container">
+                <div class="label" style="font-size: 22px; margin-bottom: 15px;">Cumi-cumi/Squid</div>
+
+                <div class="label">Warna:</div>
+                <div class="value">Memiliki warna putih dan lapisan luar ungu kecoklatan/kemerahan.</div>
+
+                <div class="label">Tekstur:</div>
+                <div class="value">Kenyal dan padat, tidak lembek dan berlendir.</div>
+
+                <div class="label">Mata:</div>
+                <div class="value">mata jernih cembung dan tidak kusam/buram/cekung.</div>
+
+                <div class="label">Aroma:</div>
+                <div class="value">Memiliki aroma laut yang tidak menyengat, tidak bau busuk dan amis yang terlalu tajam.</div>
+
+                <div class="label">Kantung Tinta:</div>
+                <div class="value">Kantung tinta utuh/tidak bocor.</div>
+
+                <div class="label">Kulit dan Sirip:</div>
+                <div class="value">kulit tidak mudah terkelupas, sirip segar,kaku dan tidak layu/lemas.</div>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="egg.jpg" alt="Deskripsi Gambar 2">
+            </div>
+            <div class="description-container">
+                <div class="label" style="font-size: 22px; margin-bottom: 15px;">Telur/Egg</div>
+
+                <div class="label">Kulit/Cangkang:</div>
+                <div class="value">Bersih, utuh,tidak retak.</div>
+
+                <div class="label">Tes Dengan Air:</div>
+                <div class="value">Telur akan tenggelam apabila didalam air, tidak mengapung.</div>
+
+                <div class="label">Aroma:</div>
+                <div class="value">Tidak memimiliki aroma yang kuat, tidak bau busuk dan tidak bau sulfur.</div>
+
+                <div class="label">Test Dengan Menggoyangkan:</div>
+                <div class="value">Telur memiliki isi yang padat dan tidak bersuara saat digoyangkan.</div>
+
+                <div class="label">Cek Ukuran Berat:</div>
+                <div class="value">memiliki ukuran yang seragam dan terasa padat, tidak terasa ringan/rapuh.</div>
+            </div>
+        </div>
+        <div class="footer" style="background-color: #4b43435e; font-size: 12px; padding: 10px; text-align: center;">
+            Cetak dan tempelkan halaman ini di loading dock sebagai panduan untuk menentukan bahan baku yang berkualitas baik.
+        </div>
+    </div>
+
+    <button class="btn-print" onclick="printPage()">Download PDF</button>
+
+    <script>
+        // Fungsi untuk print halaman
+        function printPage() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
